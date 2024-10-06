@@ -4,5 +4,88 @@
   </head>
   <body>
     <!-- Write your code here -->
+	    <div class="container">
+        <div class="left">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo">
+            <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        <div class="right">
+            <form>
+                <input type="text" id="email" placeholder="Email address or phone number">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Log in</button>
+                <a href="#">Forgotten account?</a>
+            </form>
+            <button class="signup">Create new account</button>
+        </div>
+    </div>
   </body>
 </html>
+css /*  your css code here. If applicable */
+body {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 450px;
+    margin-top: 70px;
+    display: inline-block;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    gap: 10px;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button {
+    background-color: #1877f2;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.signup {
+    background-color: #42b72a;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
